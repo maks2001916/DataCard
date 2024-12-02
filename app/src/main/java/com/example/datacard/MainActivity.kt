@@ -1,5 +1,6 @@
 package com.example.datacard
 
+import android.annotation.SuppressLint
 import android.content.Intent
 import android.net.Uri
 import android.os.Bundle
@@ -27,9 +28,11 @@ class MainActivity : AppCompatActivity() {
     private lateinit var nameET: EditText
     private lateinit var surnameET: EditText
     private lateinit var dateBirthET: EditText
+    private lateinit var numberPhoneET: EditText
     private lateinit var saveBTN: Button
 
 
+    @SuppressLint("MissingInflatedId")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
@@ -40,6 +43,7 @@ class MainActivity : AppCompatActivity() {
         nameET = findViewById(R.id.nameET)
         surnameET = findViewById(R.id.surnameET)
         dateBirthET = findViewById(R.id.dateBirthET)
+        numberPhoneET = findViewById(R.id.phoneNumberET)
         saveBTN = findViewById(R.id.saveBTN)
 
         setSupportActionBar(toolbarTB)
@@ -54,6 +58,7 @@ class MainActivity : AppCompatActivity() {
             if (imageIV.toString().isNotEmpty() &&
                 nameET.text.toString().isNotEmpty() &&
                 surnameET.text.toString().isNotEmpty() &&
+                numberPhoneET.text.toString().isNotEmpty() &&
                 dateBirthET.text.toString().isNotEmpty()) {
                 if (isValidDate(dateBirthET.text.toString())) {
                     val infoIntent = Intent(this, ViewingInformation::class.java)
@@ -61,6 +66,7 @@ class MainActivity : AppCompatActivity() {
                     infoIntent.putExtra("image", photoUri)
                     infoIntent.putExtra("name", nameET.text.toString())
                     infoIntent.putExtra("surname", surnameET.text.toString())
+                    infoIntent.putExtra("phone", numberPhoneET.text.toString())
                     infoIntent.putExtra("date", dateBirthET.text.toString())
                     startActivity(infoIntent)
                 } else {

@@ -54,12 +54,29 @@
                 android:layout_height="wrap_content"/>
 
             <TextView
+                android:id="@+id/phoneNumberTV"
+                android:text="@string/numberPhone"
+                android:layout_margin="5dp"
+                android:textSize="24sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
                 android:id="@+id/dateBirthTV"
                 android:text="@string/dateBirth"
                 android:layout_margin="5dp"
                 android:textSize="24sp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/beforeBirthdayTV"
+                android:text="@string/beforeBirthday"
+                android:layout_margin="5dp"
+                android:textSize="24sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
 
         </LinearLayout>
 

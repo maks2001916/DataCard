@@ -7,4 +7,6 @@
     <string name="exit">выход</string>
     <string name="enterDate">Введите дату в формате dd-MM-yyyy</string>
     <string name="notAllFieldsAreFilledIn">Не все поля заполнены</string>
+    <string name="numberPhone">Номер телефона</string>
+    <string name="beforeBirthday">До дня рождения</string>
 </resources>

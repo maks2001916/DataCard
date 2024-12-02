@@ -50,6 +50,13 @@
                 android:layout_height="wrap_content"/>
 
             <EditText
+                android:id="@+id/phoneNumberET"
+                android:hint="@string/numberPhone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+
+            <EditText
                 android:id="@+id/dateBirthET"
                 android:hint="@string/dateBirth"
                 android:layout_width="match_parent"
