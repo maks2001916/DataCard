@@ -5,4 +5,6 @@
     <string name="name">Имя</string>
     <string name="save">сохранить</string>
     <string name="exit">выход</string>
+    <string name="enterDate">Введите дату в формате dd-MM-yyyy</string>
+    <string name="notAllFieldsAreFilledIn">Не все поля заполнены</string>
 </resources>

@@ -9,8 +9,8 @@
     tools:context=".MainActivity">
 
     <androidx.appcompat.widget.Toolbar
-        android:id="@+id/toolbarStore"
-        app:title="@string/app_name"
+        android:id="@+id/toolbarMain"
+        android:title="@string/app_name"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:titleTextColor="@color/white"

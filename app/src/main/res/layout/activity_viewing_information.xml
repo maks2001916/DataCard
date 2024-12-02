@@ -6,11 +6,11 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".viewingInformation">
+    tools:context=".ViewingInformation">
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbarInfo"
-        app:title="@string/app_name"
+        android:title="@string/app_name"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:titleTextColor="@color/white"
@@ -38,7 +38,7 @@
             android:orientation="vertical">
 
             <TextView
-                android:id="@+id/titleInfoET"
+                android:id="@+id/nameTV"
                 android:text="@string/name"
                 android:layout_margin="5dp"
                 android:textSize="24sp"
@@ -46,7 +46,7 @@
                 android:layout_height="wrap_content"/>
 
             <TextView
-                android:id="@+id/priceInfoET"
+                android:id="@+id/surnameTV"
                 android:text="@string/surname"
                 android:layout_margin="5dp"
                 android:textSize="24sp"
@@ -54,7 +54,7 @@
                 android:layout_height="wrap_content"/>
 
             <TextView
-                android:id="@+id/descriptionInfoET"
+                android:id="@+id/dateBirthTV"
                 android:text="@string/dateBirth"
                 android:layout_margin="5dp"
                 android:textSize="24sp"
