@@ -62,8 +62,7 @@ class MainActivity : AppCompatActivity() {
                 dateBirthET.text.toString().isNotEmpty()) {
                 if (isValidDate(dateBirthET.text.toString())) {
                     val infoIntent = Intent(this, ViewingInformation::class.java)
-                    photoUri = imageIV.toString().toUri()
-                    infoIntent.putExtra("image", photoUri)
+                    photoUri?.let { infoIntent.putExtra("image", it.toString()) }
                     infoIntent.putExtra("name", nameET.text.toString())
                     infoIntent.putExtra("surname", surnameET.text.toString())
                     infoIntent.putExtra("phone", numberPhoneET.text.toString())

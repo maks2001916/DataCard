@@ -64,7 +64,7 @@ class ViewingInformation : AppCompatActivity() {
     }
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
-        when (item.itemId) {R.id.exit -> finish() }
+        when (item.itemId) {R.id.exit -> finishAffinity() }
         return super.onOptionsItemSelected(item)
     }
 
